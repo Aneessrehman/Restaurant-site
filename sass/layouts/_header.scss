@@ -1,0 +1,38 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url("../img/main.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 1%, 100% 10%, 100% 100%, 0 90%);
+
+    &__logo-box {
+        position: absolute;
+        top: 60px;
+        left: 47%;
+    }
+
+    &__logo {
+        height: 50px;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
+
+/* .logo:hover {
+    animation-name: moveinright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+} */
