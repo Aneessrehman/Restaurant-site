@@ -4,7 +4,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: $color-white;
     padding: 3rem;
 
     box-sizing: border-box;
@@ -71,4 +71,33 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+
+.heading-secondary-menu {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    // &:hover {
+    //     // transform: skewY(2deg) skewX(15deg) scale(1.1);
+    // }
+}
+
+
+.heading-tertiary-menu {
+    font-size: 5rem;
+    color: #f48c06;
+    margin-top: 8rem;
+    margin-left: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph-menu {
+    font-size: 2rem;
+    margin-left: 8rem;
+    text-transform: uppercase;
 }

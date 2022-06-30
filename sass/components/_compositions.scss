@@ -2,7 +2,6 @@
     position: relative;
 
     &__photo {
-        background-color: orange;
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
@@ -37,4 +36,18 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
+}
+
+
+.steak_photo {
+    width: 80%;
+}
+
+.burger_photo {
+    width: 130%;
+}
+
+.pasta_photo {
+    width: 90%;
+    // margin-left: -3;
 }
