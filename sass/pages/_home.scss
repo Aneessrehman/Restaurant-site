@@ -11,3 +11,26 @@
     // background-color: black;
     // background-image: url("");
 }
+
+
+.section-book {
+    padding: 15rem 0;
+    background-color: $color-bg ;
+}
+
+.book {
+    background-image: linear-gradient(105deg,
+            rgba($color-black, .9) 0%,
+            rgba($color-black, .9) 50%,
+            transparent 50%), url("../img/reserved_sign.jpg");
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    height: 49rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}
