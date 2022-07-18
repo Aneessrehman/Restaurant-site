@@ -2,12 +2,9 @@ body {
     background-color: $color-bg;
     font-family: "lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: $color-white;
-    padding: 3rem;
-
-    box-sizing: border-box;
 }
 
 
@@ -16,17 +13,26 @@ body {
     text-transform: uppercase;
 
     backface-visibility: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
+
+    @include respond(tab-port) {
+        margin-top: 5rem;
+    }
 
     &--main {
         display: block;
-        font-size: 55px;
+        font-size: 5.5rem;
         font-weight: 400;
-        letter-spacing: 35px;
+        letter-spacing: 3.5rem;
 
         animation-name: moveinleft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 4.5rem;
+        }
 
         /* animation-iteration-count: 3s; */
 
@@ -35,13 +41,19 @@ body {
 
     &--sub {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 20px;
+        letter-spacing: 2rem;
 
         animation-name: moveinright;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+
+
     }
 }
 
@@ -53,6 +65,15 @@ body {
     font-weight: 700;
     letter-spacing: .2rem;
     transition: all .2s;
+
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -95,10 +116,33 @@ body {
     margin-left: 8rem;
     font-weight: 700;
     text-transform: uppercase;
+
+
+    @include respond(tab-port) {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
 }
 
 .paragraph-menu {
     font-size: 2rem;
     margin-left: 8rem;
     text-transform: uppercase;
+
+    @include respond(tab-port) {
+        // font-size: 2rem;
+        text-align: center;
+        margin-left: 2rem;
+        // margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
 }
